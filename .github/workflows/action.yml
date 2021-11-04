@@ -30,7 +30,7 @@ jobs:
         run: './node_modules/.bin/http-server -p 8099 &'
         
       - name: 'run test'
-        run: 'node sampleMobileTest.js'
+        run: 'mocha sampleMobileTest.js'
         
       - name: 'BrowserStackLocal Stop'
         uses: 'browserstack/github-actions/setup-local@master'
