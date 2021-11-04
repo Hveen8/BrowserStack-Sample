@@ -2,7 +2,7 @@
   "name": "dummy-repo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "sampleMobileTest.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -V"
   },
