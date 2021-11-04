@@ -29,8 +29,11 @@ jobs:
       - name: 'running http-server'
         run: './node_modules/.bin/http-server -p 8099 &'
         
-      - name: 'run test'
+      - name: 'run test config'
         run: 'node sampleMobileTest.conf.js'
+        
+      - name: 'run test'
+        run: 'node sampleMobileTest.js'
         
       - name: 'BrowserStackLocal Stop'
         uses: 'browserstack/github-actions/setup-local@master'
