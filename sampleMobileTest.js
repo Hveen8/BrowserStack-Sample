@@ -4,17 +4,17 @@ exports.config = {
 
   updateJob: false,
   specs: [
-    './examples/run-first-test/specs/first_test.js'
+    './sampleMobileTest.js'
   ],
   exclude: [],
 
   capabilities: [{
-    project: "First Webdriverio Android Project",
+    project: "GitHub Integration Test",
     build: 'Webdriverio Android',
     name: 'first_test',
     device: 'Google Pixel 3',
     os_version: "9.0",
-    app: process.env.BROWSERSTACK_APP_ID || 'bs://<hashed app-id>',
+    app: process.env.BROWSERSTACK_APP_ID || 'bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c',
     'browserstack.debug': true
   }],
 
