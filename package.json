@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/rchougule/dummy-repo#readme",
   "dependencies": {
-    "http-server": "^0.12.3",
-    "selenium-webdriver": "^4.0.0-alpha.7"
+    "http-server": "^14.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "wdio": "^6.0.1"
   }
 }
