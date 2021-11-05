@@ -17,7 +17,7 @@ driver = wd.promiseRemote("http://hub-cloud.browserstack.com/wd/hub");
 driver
   .init(desiredCaps)
   .then(function () {
-    return driver.waitForElementByAccessibilityId('Search Wikipedia', asserters.isDisplayed && asserters.isEnabled, 30000);
+    return driver.waitForElementByAccessibilityId('ThisTextDoesntExist', asserters.isDisplayed && asserters.isEnabled, 30000);
   })
   .then(function (searchElement) {
     return searchElement.click();
@@ -32,7 +32,7 @@ driver
     return driver.elementsByClassName('android.widget.TextView');   
   })
   .then(function (search_results) {
-    assert(search_results.length = 0);
+    assert(search_results.length > 0);
   })
   .fin(function() { return driver.quit(); })
   .done();
