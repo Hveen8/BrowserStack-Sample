@@ -4,7 +4,7 @@
   "description": "",
   "main": "sampleMobileTest.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -V"
+    "test": "mocha sampleMobileTest.conf.js"
   },
   "repository": {
     "type": "git",
