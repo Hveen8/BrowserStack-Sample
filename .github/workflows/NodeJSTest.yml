@@ -32,6 +32,9 @@ jobs:
       - name: 'running npm install wdio'
         run: 'npm install wdio'
         
+      - name: 'running npm install wdio'
+        run: 'npm install wd'
+        
       - name: 'running http-server'
         run: './node_modules/.bin/http-server -p 8099 &'
 
