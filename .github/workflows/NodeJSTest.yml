@@ -26,7 +26,7 @@ jobs:
       - name: 'running npm install'
         run: 'npm install'
         
-      - name: 'running npm install wdio'
+      - name: 'running npm install wd'
         run: 'npm install wd'
         
       - name: 'running http-server'
