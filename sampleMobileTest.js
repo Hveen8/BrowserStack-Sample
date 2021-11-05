@@ -1,5 +1,4 @@
 var assert = require('assert');
-var webdriver = require('selenium-webdriver');
 
 describe('Search Wikipedia Functionality', () => {
   it('can find search results', async () => {
