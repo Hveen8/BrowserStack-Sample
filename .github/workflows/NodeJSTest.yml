@@ -26,12 +26,6 @@ jobs:
       - name: 'running npm install'
         run: 'npm install'
         
-      - name: 'running npm install mocha'
-        run: 'npm install mocha'
-        
-      - name: 'running npm install wdio'
-        run: 'npm install wdio'
-        
       - name: 'running npm install wdio'
         run: 'npm install wd'
         
