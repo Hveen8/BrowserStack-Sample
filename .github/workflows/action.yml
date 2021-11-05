@@ -29,6 +29,9 @@ jobs:
       - name: 'running npm install mocha'
         run: 'npm install mocha'
         
+      - name: 'running npm install wdio'
+        run: 'npm install wdio'
+        
       - name: 'running http-server'
         run: './node_modules/.bin/http-server -p 8099 &'
         
