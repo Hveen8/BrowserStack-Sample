@@ -28,7 +28,7 @@ driver
   .then(function (searchInput) {
     return searchInput.sendKeys("BrowserStack");
   })
-  .then(function () {
+  .then(function (search_results) {
      // Setting the status of test as 'passed' or 'failed' based on the condition if results are found for the search
     if(search_results.length > 0){
       return driver.execute('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed","reason": "Results found!"}}');
