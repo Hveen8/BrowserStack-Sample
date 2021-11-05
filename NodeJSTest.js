@@ -3,13 +3,14 @@ var assert = require('assert');
 var asserters = wd.asserters;
 
 desiredCaps = {
-  'browserstack.user' : 'harryvanderveen_5FiwGa',
-  'browserstack.key' : 'e4EbPv9rtnWVeTNhWV5T',
-  'build' : 'Node Android',
-  'name': 'single_test',
+  'browserstack.user' : process.env.BROWSERSTACK_USERNAME,
+  'browserstack.key' : process.env.BROWSERSTACK_ACCESS_KEY,
+  'build' : 'Ran from GitHub',
+  'name': 'sample_test',
   'device' : 'Google Pixel 3',
   'app' : 'bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c',
-  'browserstack.debug' : true
+  'browserstack.debug' : true,
+  'browserstack.networkLogs': true
 };
 driver = wd.promiseRemote("http://hub-cloud.browserstack.com/wd/hub");
 
