@@ -29,10 +29,14 @@ driver
     return searchInput.sendKeys("BrowserStack");
   })
   .then(function () {
-    return driver.elementsByClassName('android.widget.TextView');   
+     // Setting the status of test as 'passed' or 'failed' based on the condition if results are found for the search
+    if(search_results.length > 0){
+      return driver.execute('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed","reason": "Results found!"}}');
+    } else {
+      driver.execute('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed","reason": "No results available!"}}');
+    }
   })
-  .then(function (search_results) {
-    assert(search_results.length > 0);
+  .fin(function() { 
+    return driver.quit(); 
   })
-  .fin(function() { return driver.quit(); })
   .done();
