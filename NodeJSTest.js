@@ -28,6 +28,9 @@ driver
   .then(function (searchInput) {
     return searchInput.sendKeys("BrowserStack");
   })
+  .then(function () {
+    return driver.elementsByClassName('android.widget.TextView');   
+  })
   .then(function (search_results) {
      // Setting the status of test as 'passed' or 'failed' based on the condition if results are found for the search
     if(search_results.length > 0){
