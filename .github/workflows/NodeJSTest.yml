@@ -1,4 +1,4 @@
-name: 'BrowserStack'
+name: 'BrowserStack NodeJS Test'
 on: workflow_dispatch
 
 jobs:
