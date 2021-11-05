@@ -32,7 +32,7 @@ driver
     return driver.elementsByClassName('android.widget.TextView');   
   })
   .then(function (search_results) {
-    assert(search_results.length > 0);
+    assert(search_results.length = 0);
   })
   .fin(function() { return driver.quit(); })
   .done();
